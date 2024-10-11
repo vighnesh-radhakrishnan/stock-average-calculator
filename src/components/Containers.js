@@ -143,3 +143,16 @@ export const AppWrapper = styled.div`
   font-family: "Patrick Hand", cursive;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for layering */
 `;
+
+export const FooterWrapper = styled.div`
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #f8f9fa; /* You can change the background color */
+    padding: 5px 0; /* Adjust padding as needed */
+  }
+`;

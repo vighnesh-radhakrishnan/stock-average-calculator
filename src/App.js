@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Form from "./components/Form";
 import StockList from "./components/StockList";
 import AveragePrice from "./components/AveragePrice";
+import Footer from "./components/Footer";
 import { AppWrapper } from "./components/Containers"; // Import the new wrapper
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <AveragePrice stocks={stocks} />
         </>
       )}
+      <Footer />
     </AppWrapper>
   );
 };
