@@ -105,9 +105,7 @@ export const StockListWrapper = styled.div`
 `;
 
 export const AveragePriceWrapper = styled.div`
-  margin: 20px auto; /* Center the whole component */
   background-color: #f9f9f9;
-  max-width: 300px; /* Set a maximum width so it doesn't stretch */
 
   h3 {
     color: #000;
@@ -124,7 +122,7 @@ export const AveragePriceWrapper = styled.div`
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin: 0 auto; /* Center the avgPrice block */
-    width: 100%; /* Ensure it fits within the wrapper */
+    width: fit-content;
   }
 `;
 
