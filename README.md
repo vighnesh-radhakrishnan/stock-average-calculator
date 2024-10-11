@@ -12,7 +12,7 @@ The **Stock Average Calculator** is a simple React-based web application that al
 
 ## Screenshots
 
-![App Screenshot](./path/to/screenshot.png)  
+![App Screenshot](./public/images/Avg%20Stock%20Calc%20SS.png)  
 _(You can add screenshots by providing the relative path to images in your project.)_
 
 ## Installation
