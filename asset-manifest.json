@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stock-average-calculator/static/css/main.a240c550.css",
-    "main.js": "/stock-average-calculator/static/js/main.5078fa08.js",
+    "main.js": "/stock-average-calculator/static/js/main.bec2f270.js",
     "index.html": "/stock-average-calculator/index.html",
     "main.a240c550.css.map": "/stock-average-calculator/static/css/main.a240c550.css.map",
-    "main.5078fa08.js.map": "/stock-average-calculator/static/js/main.5078fa08.js.map"
+    "main.bec2f270.js.map": "/stock-average-calculator/static/js/main.bec2f270.js.map"
   },
   "entrypoints": [
     "static/css/main.a240c550.css",
-    "static/js/main.5078fa08.js"
+    "static/js/main.bec2f270.js"
   ]
 }
