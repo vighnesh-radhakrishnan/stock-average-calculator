@@ -17,7 +17,9 @@ const AveragePrice = ({ stocks }) => {
 
   return (
     <AveragePriceWrapper>
-      <h3>Average Stock Price: ${calculateAverage()}</h3>
+      <div className="avgPrice">
+        <h3>Average Stock Price: {calculateAverage()}</h3>
+      </div>
     </AveragePriceWrapper>
   );
 };

@@ -7,7 +7,7 @@ export const FormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Ensure elements are stacked vertically */
+  flex-direction: column;
 
   .formContainer {
     display: flex;
@@ -64,25 +64,39 @@ export const FormWrapper = styled.div`
 
 export const StockListWrapper = styled.div`
   margin: 20px;
-  background-color: #f9f9f9; /* Light paper-like background */
-  border: 1px dashed #000; /* Dotted border */
+  background-color: #f9f9f9;
   padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h3 {
     color: #000;
     font-family: "Patrick Hand", cursive;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .stock-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 
   .stock-item {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-    background-color: #fff; /* Light background */
+    background-color: #fff;
     padding: 15px;
     border: 1px dashed #000; /* Dotted border */
     color: #000;
     font-family: "Patrick Hand", cursive;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
@@ -91,22 +105,38 @@ export const StockListWrapper = styled.div`
 `;
 
 export const AveragePriceWrapper = styled.div`
-  margin: 20px;
+  margin: 20px auto; /* Center the whole component */
   background-color: #f9f9f9;
-  border: 1px dashed #000;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Set a maximum width so it doesn't stretch */
 
   h3 {
     color: #000;
     font-family: "Patrick Hand", cursive;
+    text-align: center; /* Center the text */
+  }
+
+  .avgPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #000;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the avgPrice block */
+    width: 100%; /* Ensure it fits within the wrapper */
   }
 `;
 
 export const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   background-color: #f9f9f9; /* Paper-like background */
   color: #000; /* Black text for contrast */
   min-height: 100vh;

@@ -14,7 +14,9 @@ const App = () => {
 
   return (
     <AppWrapper>
-      <h1>Stock Average Calculator</h1>
+      <div className="title">
+        <h1>Stock Average Calculator</h1>
+      </div>
       <Form addStock={addStock} />
       {stocks.length > 0 && (
         <>
