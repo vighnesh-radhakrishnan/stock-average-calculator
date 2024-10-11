@@ -57,7 +57,8 @@ export const FormWrapper = styled.div`
     width: 50%; /* Full width for button */
 
     &:hover {
-      background-color: #555; /* Darker gray on hover */
+      background-color: #fff; /* Darker gray on hover */
+      color: #000;
     }
   }
 `;
