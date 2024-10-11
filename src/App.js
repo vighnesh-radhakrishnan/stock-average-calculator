@@ -16,8 +16,12 @@ const App = () => {
     <AppWrapper>
       <h1>Stock Average Calculator</h1>
       <Form addStock={addStock} />
-      <StockList stocks={stocks} />
-      <AveragePrice stocks={stocks} />
+      {stocks.length > 0 && (
+        <>
+          <StockList stocks={stocks} />
+          <AveragePrice stocks={stocks} />
+        </>
+      )}
     </AppWrapper>
   );
 };
