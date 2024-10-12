@@ -57,6 +57,7 @@ export const FormWrapper = styled.div`
     width: 50%; /* Full width for button */
 
     &:hover {
+      border: 1px dashed #000;
       background-color: #fff; /* Darker gray on hover */
       color: #000;
     }
