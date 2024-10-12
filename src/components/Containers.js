@@ -150,6 +150,7 @@ export const AppWrapper = styled.div`
   }
 
   .themeButton {
+    background: transparent;
     color: white;
     border: 1px dashed #000;
     padding: 10px 20px;
