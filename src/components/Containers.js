@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const FormWrapper = styled.div`
   margin: 20px;
-  background-color: #f9f9f9; /* Light paper-like background */
+  background-color: ${(props) =>
+    props.theme.background}; /* Light paper-like background */
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -23,7 +24,8 @@ export const FormWrapper = styled.div`
   }
 
   h3 {
-    color: #000; /* Black text for hand-drawn effect */
+    color: ${(props) =>
+      props.theme.text}; /* Black text for hand-drawn effect */
     font-family: "Patrick Hand", cursive; /* Hand-drawn style font */
     margin-bottom: 15px;
     text-align: center; /* Center the title */
@@ -32,23 +34,26 @@ export const FormWrapper = styled.div`
   input {
     padding: 10px;
     margin: 5px 0;
-    border: 1px dashed #000; /* Dotted input border */
-    background-color: #fff; /* Light background */
-    color: #000;
+    border: 1px dashed ${(props) => props.theme.borderColor}; /* Dotted input border */
+    background-color: ${(props) =>
+      props.theme.inputBackground}; /* Light background */
+    color: ${(props) => props.theme.inputText};
     font-family: "Patrick Hand", cursive;
     width: 100%; /* Full width for input */
 
     &:focus {
       outline: none;
-      border-color: #000; /* Black border on focus */
+      border-color: ${(props) =>
+        props.theme.borderColor}; /* Black border on focus */
     }
   }
 
   button {
     padding: 10px;
-    background-color: #000; /* Black button */
-    color: #fff;
-    border: 1px solid #000; /* Thin black border */
+    background-color: ${(props) =>
+      props.theme.buttonBackground}; /* Black button */
+    color: ${(props) => props.theme.buttonText};
+    border: 1px solid ${(props) => props.theme.borderColor}; /* Thin black border */
     cursor: pointer;
     margin-top: 10px;
     border-radius: 50px;
@@ -57,23 +62,23 @@ export const FormWrapper = styled.div`
     width: 50%; /* Full width for button */
 
     &:hover {
-      border: 1px dashed #000;
-      background-color: #fff; /* Darker gray on hover */
-      color: #000;
+      border: 1px dashed ${(props) => props.theme.borderColor};
+      background-color: ${(props) => props.theme.background};
+      color: ${(props) => props.theme.hoverButtonText};
     }
   }
 `;
 
 export const StockListWrapper = styled.div`
   margin: 20px;
-  background-color: #f9f9f9;
+  background-color: ${(props) => props.theme.background};
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
-    color: #000;
+    color: ${(props) => props.theme.text};
     font-family: "Patrick Hand", cursive;
     text-align: center;
     margin-bottom: 20px;
@@ -87,10 +92,10 @@ export const StockListWrapper = styled.div`
   }
 
   .stock-item {
-    background-color: #fff;
+    background-color: ${(props) => props.theme.background};
     padding: 15px;
-    border: 1px dashed #000; /* Dotted border */
-    color: #000;
+    border: 1px dashed ${(props) => props.theme.borderColor}; /* Dotted border */
+    color: ${(props) => props.theme.text};
     font-family: "Patrick Hand", cursive;
     text-align: center;
     width: 120px;
@@ -107,10 +112,10 @@ export const StockListWrapper = styled.div`
 `;
 
 export const AveragePriceWrapper = styled.div`
-  background-color: #f9f9f9;
+  background-color: ${(props) => props.theme.background};
 
   h3 {
-    color: #000;
+    color: ${(props) => props.theme.text};
     font-family: "Patrick Hand", cursive;
     text-align: center; /* Center the text */
   }
@@ -120,7 +125,7 @@ export const AveragePriceWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px dashed #000;
+    border: 1px dashed ${(props) => props.theme.borderColor};
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin: 0 auto; /* Center the avgPrice block */
@@ -153,7 +158,7 @@ export const AppWrapper = styled.div`
   .themeButton {
     background: transparent;
     color: white;
-    border: 1px dashed #000;
+    border: 1px dashed ${(props) => props.theme.borderColor};
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -166,8 +171,9 @@ export const AppWrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
-  background-color: #f9f9f9; /* Paper-like background */
-  color: #000; /* Black text for contrast */
+  background-color: ${(props) =>
+    props.theme.background}; /* Paper-like background */
+  color: ${(props) => props.theme.text}; /* Black text for contrast */
   min-height: 100vh;
   padding: 20px;
   font-family: "Patrick Hand", cursive;
@@ -181,8 +187,10 @@ export const FooterWrapper = styled.div`
     left: 0;
     width: 100%;
     font-size: 15px;
+    color: ${(props) => props.theme.text};
     text-align: center;
-    background-color: #f8f9fa; /* You can change the background color */
+    background-color: ${(props) =>
+      props.theme.background}; /* You can change the background color */
     padding: 5px 0; /* Adjust padding as needed */
   }
 `;
