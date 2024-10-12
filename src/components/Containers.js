@@ -130,7 +130,35 @@ export const AveragePriceWrapper = styled.div`
 export const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .titleWrapper {
+    position: absolute;
+    left: 50%; /* Moves the title to the middle */
+    transform: translateX(-50%); /* Centers the title */
+  }
+
+  .themeIcon {
+    margin-left: auto; /* Pushes the icon to the far right */
+  }
+
+  .themeButton {
+    color: white;
+    border: 1px dashed #000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: "8px";
+    cursor: pointer;
+  }
+
   .title {
     display: flex;
     align-items: center;
