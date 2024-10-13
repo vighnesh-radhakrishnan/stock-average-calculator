@@ -106,7 +106,7 @@ export const StockListWrapper = styled.div`
     align-items: center;
 
     &:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+      box-shadow: 0 0 10px ${(props) => props.theme.boxShadow}; /* Subtle shadow on hover */
     }
   }
 `;

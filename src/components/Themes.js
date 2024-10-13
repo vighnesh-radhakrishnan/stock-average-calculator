@@ -8,6 +8,7 @@ export const lightTheme = {
   inputBackground: "#fff",
   inputText: "#000",
   borderColor: "#000",
+  boxShadow: "#00000033",
 };
 
 export const darkTheme = {
@@ -19,4 +20,5 @@ export const darkTheme = {
   inputBackground: "#333",
   inputText: "#fff",
   borderColor: "#fff",
+  boxShadow: "#ffffff4d",
 };
