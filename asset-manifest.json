@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stock-average-calculator/static/css/main.a240c550.css",
-    "main.js": "/stock-average-calculator/static/js/main.b1dd20dc.js",
+    "main.js": "/stock-average-calculator/static/js/main.8f6d9178.js",
     "index.html": "/stock-average-calculator/index.html",
     "static/media/LightMode.svg": "/stock-average-calculator/static/media/LightMode.0b0973df2690a473de3f1739afca76fb.svg",
     "static/media/DarkMode.svg": "/stock-average-calculator/static/media/DarkMode.2eeb035815f29e4a73b4a7c662da9617.svg",
     "main.a240c550.css.map": "/stock-average-calculator/static/css/main.a240c550.css.map",
-    "main.b1dd20dc.js.map": "/stock-average-calculator/static/js/main.b1dd20dc.js.map"
+    "main.8f6d9178.js.map": "/stock-average-calculator/static/js/main.8f6d9178.js.map"
   },
   "entrypoints": [
     "static/css/main.a240c550.css",
-    "static/js/main.b1dd20dc.js"
+    "static/js/main.8f6d9178.js"
   ]
 }
