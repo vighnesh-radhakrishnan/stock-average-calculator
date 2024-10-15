@@ -67,6 +67,17 @@ export const FormWrapper = styled.div`
       color: ${(props) => props.theme.hoverButtonText};
     }
   }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 1.2rem; /* Smaller font for mobile */
+    }
+
+    button {
+      font-size: 0.9rem; /* Smaller button text */
+      padding: 8px;
+    }
+  }
 `;
 
 export const StockListWrapper = styled.div`
@@ -109,6 +120,17 @@ export const StockListWrapper = styled.div`
       box-shadow: 0 0 10px ${(props) => props.theme.boxShadow}; /* Subtle shadow on hover */
     }
   }
+
+  @media (max-width: 600px) {
+    .stock-item {
+      width: 80px;
+      height: 80px; /* Smaller stock items */
+    }
+
+    h3 {
+      font-size: 1.2rem; /* Smaller title text */
+    }
+  }
 `;
 
 export const AveragePriceWrapper = styled.div`
@@ -130,6 +152,16 @@ export const AveragePriceWrapper = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin: 0 auto; /* Center the avgPrice block */
     width: fit-content;
+  }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .avgPrice {
+      padding: 15px; /* Adjust padding for mobile */
+    }
   }
 `;
 
@@ -177,7 +209,18 @@ export const AppWrapper = styled.div`
   min-height: 100vh;
   padding: 20px;
   font-family: "Patrick Hand", cursive;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for layering */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .themeButton {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
 `;
 
 export const FooterWrapper = styled.div`
@@ -192,5 +235,11 @@ export const FooterWrapper = styled.div`
     background-color: ${(props) =>
       props.theme.background}; /* You can change the background color */
     padding: 5px 0; /* Adjust padding as needed */
+  }
+
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 13px; /* Smaller font for mobile */
+    }
   }
 `;
