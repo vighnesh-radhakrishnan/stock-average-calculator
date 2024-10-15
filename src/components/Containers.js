@@ -214,7 +214,7 @@ export const AppWrapper = styled.div`
 
   @media (max-width: 600px) {
     .title {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .themeButton {
