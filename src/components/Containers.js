@@ -157,7 +157,7 @@ export const AveragePriceWrapper = styled.div`
 
   @media (max-width: 600px) {
     h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .avgPrice {
