@@ -135,6 +135,7 @@ export const StockListWrapper = styled.div`
 
 export const AveragePriceWrapper = styled.div`
   background-color: ${(props) => props.theme.background};
+  padding-bottom: 10px;
 
   h3 {
     color: ${(props) => props.theme.text};
