@@ -42,7 +42,7 @@ const App = () => {
         <Form addStock={addStock} />
         {stocks.length > 0 && (
           <>
-            <StockList stocks={stocks} />
+            <StockList stocks={stocks} setStocks={setStocks} />
             <AveragePrice stocks={stocks} />
           </>
         )}

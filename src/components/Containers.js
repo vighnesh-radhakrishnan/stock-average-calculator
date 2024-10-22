@@ -103,9 +103,10 @@ export const StockListWrapper = styled.div`
   }
 
   .stock-item {
+    position: relative;
     background-color: ${(props) => props.theme.background};
     padding: 15px;
-    border: 1px dashed ${(props) => props.theme.borderColor}; /* Dotted border */
+    border: 1px dashed ${(props) => props.theme.borderColor};
     color: ${(props) => props.theme.text};
     font-family: "Patrick Hand", cursive;
     text-align: center;
@@ -117,18 +118,34 @@ export const StockListWrapper = styled.div`
     align-items: center;
 
     &:hover {
-      box-shadow: 0 0 10px ${(props) => props.theme.boxShadow}; /* Subtle shadow on hover */
+      box-shadow: 0 0 10px ${(props) => props.theme.boxShadow};
+    }
+
+    .delete-icon {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      fill: ${(props) => props.theme.text};
+      width: 20px;
+      height: 20px;
+      transition: transform 0.2s;
+    }
+
+    .delete-icon:hover {
+      transform: scale(1.2);
+      fill: red;
     }
   }
 
   @media (max-width: 600px) {
     .stock-item {
       width: 80px;
-      height: 80px; /* Smaller stock items */
+      height: 80px;
     }
 
     h3 {
-      font-size: 1.2rem; /* Smaller title text */
+      font-size: 1.2rem;
     }
   }
 `;
