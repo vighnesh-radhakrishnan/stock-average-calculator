@@ -133,7 +133,7 @@ export const StockListWrapper = styled.div`
     }
 
     .delete-icon:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       fill: red;
     }
   }
