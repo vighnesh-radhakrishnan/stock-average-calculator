@@ -14,8 +14,8 @@ const App = () => {
   const [stocks, setStocks] = useState([]);
   const [darkThemeActive, setDarkThemeActive] = useState(false);
 
-  const addStock = (price, quantity) => {
-    setStocks([...stocks, { price, quantity }]);
+  const addStock = (name, price, quantity) => {
+    setStocks([...stocks, { name, price, quantity }]);
   };
 
   const toggleTheme = () => {

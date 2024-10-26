@@ -5,13 +5,15 @@ import { FormWrapper } from "./Containers"; // Import the styled container
 const Form = ({ addStock }) => {
   const [price, setPrice] = useState("");
   const [quantity, setQuantity] = useState("");
+  const [name, setName] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (price && quantity) {
-      addStock(parseFloat(price), parseInt(quantity));
+    if (price && quantity && name) {
+      addStock(name, parseFloat(price), parseInt(quantity));
       setPrice("");
       setQuantity("");
+      setName("");
     }
   };
 
@@ -20,6 +22,12 @@ const Form = ({ addStock }) => {
       <div className="formContainer">
         <h3>Add Stock</h3>
         <div className="formInput">
+          <input
+            type="text"
+            placeholder="Stock Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <input
             type="number"
             placeholder="Stock Price"

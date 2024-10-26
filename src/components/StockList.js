@@ -6,7 +6,7 @@ const StockList = ({ stocks, setStocks }) => {
     const updatedStocks = stocks.filter((_, index) => index !== indexToDelete);
     setStocks(updatedStocks);
   };
-
+  console.log("STOCK", stocks);
   return (
     <StockListWrapper>
       <h3>Stock List</h3>
@@ -20,9 +20,10 @@ const StockList = ({ stocks, setStocks }) => {
               width="24px"
               height="24px"
             />
-            <div>Purchase {index + 1}</div>
+            <div>{stock.name}</div>
             <div>Price: {stock.price}</div>
             <div>Quantity: {stock.quantity}</div>
+            <div>Cost: {stock.quantity * stock.price}</div>
           </div>
         ))}
       </div>
