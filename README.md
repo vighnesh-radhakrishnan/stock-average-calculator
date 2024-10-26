@@ -13,7 +13,9 @@ Use **[Stock Average Calculator](https://vikkujonsnow.github.io/stock-average-ca
 
 ## Screenshots
 
-![App Screenshot](./public/images/Avg%20Stock%20Calc%20SS.png)  
+![App Screenshot](./public/images/ASC1.png)  
+_(Screenshot of Stock Average Calculator.)_
+![App Screenshot](./public/images/ASC2.png)  
 _(Screenshot of Stock Average Calculator.)_
 
 ## Installation
