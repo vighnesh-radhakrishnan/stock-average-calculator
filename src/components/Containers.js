@@ -138,10 +138,22 @@ export const StockListWrapper = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 480px) {
     .stock-item {
       width: 80px;
       height: 80px;
+      padding-top: 20px;
+
+      .delete-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        fill: ${(props) => props.theme.text};
+        width: 15px;
+        height: 15px;
+        transition: transform 0.2s;
+      }
     }
 
     h3 {
