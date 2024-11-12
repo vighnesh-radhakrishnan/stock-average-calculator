@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const FormWrapper = styled.div`
   margin: 20px;
-  background-color: ${(props) =>
-    props.theme.background}; /* Light paper-like background */
+  background-color: ${(props) => props.theme.background}; 
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -24,42 +23,38 @@ export const FormWrapper = styled.div`
   }
 
   h3 {
-    color: ${(props) =>
-      props.theme.text}; /* Black text for hand-drawn effect */
-    font-family: "Patrick Hand", cursive; /* Hand-drawn style font */
+    color: ${(props) => props.theme.text}; 
+    font-family: "Patrick Hand", cursive; 
     margin-bottom: 15px;
-    text-align: center; /* Center the title */
+    text-align: center; 
   }
 
   input {
     padding: 10px;
     margin: 5px 0;
-    border: 1px dashed ${(props) => props.theme.borderColor}; /* Dotted input border */
-    background-color: ${(props) =>
-      props.theme.inputBackground}; /* Light background */
+    border: 1px dashed ${(props) => props.theme.borderColor}; 
+    background-color: ${(props) => props.theme.inputBackground}; 
     color: ${(props) => props.theme.inputText};
     font-family: "Patrick Hand", cursive;
-    width: 100%; /* Full width for input */
+    width: 100%; 
 
     &:focus {
       outline: none;
-      border-color: ${(props) =>
-        props.theme.borderColor}; /* Black border on focus */
+      border-color: ${(props) => props.theme.borderColor}; 
     }
   }
 
   button {
     padding: 10px;
-    background-color: ${(props) =>
-      props.theme.buttonBackground}; /* Black button */
+    background-color: ${(props) => props.theme.buttonBackground};
     color: ${(props) => props.theme.buttonText};
-    border: 1px solid ${(props) => props.theme.borderColor}; /* Thin black border */
+    border: 1px solid ${(props) => props.theme.borderColor}; 
     cursor: pointer;
     margin-top: 10px;
     border-radius: 50px;
     font-family: "Patrick Hand", cursive;
     transition: background-color 0.3s ease;
-    width: 50%; /* Full width for button */
+    width: 50%; 
 
     &:hover {
       border: 1px dashed ${(props) => props.theme.borderColor};
@@ -70,11 +65,11 @@ export const FormWrapper = styled.div`
 
   @media (max-width: 600px) {
     h3 {
-      font-size: 1.2rem; /* Smaller font for mobile */
+      font-size: 1.2rem; /
     }
 
     button {
-      font-size: 0.9rem; /* Smaller button text */
+      font-size: 0.9rem; 
       padding: 8px;
     }
   }
@@ -169,7 +164,7 @@ export const AveragePriceWrapper = styled.div`
   h3 {
     color: ${(props) => props.theme.text};
     font-family: "Patrick Hand", cursive;
-    text-align: center; /* Center the text */
+    text-align: center;
   }
 
   .avgPrice {
@@ -180,7 +175,7 @@ export const AveragePriceWrapper = styled.div`
     border: 1px dashed ${(props) => props.theme.borderColor};
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Center the avgPrice block */
+    margin: 0 auto;
     width: fit-content;
   }
 
@@ -190,7 +185,7 @@ export const AveragePriceWrapper = styled.div`
     }
 
     .avgPrice {
-      padding: 15px; /* Adjust padding for mobile */
+      padding: 15px;
     }
   }
 `;
@@ -209,12 +204,12 @@ export const AppWrapper = styled.div`
 
   .titleWrapper {
     position: absolute;
-    left: 50%; /* Moves the title to the middle */
-    transform: translateX(-50%); /* Centers the title */
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .themeIcon {
-    margin-left: auto; /* Pushes the icon to the far right */
+    margin-left: auto;
   }
 
   .themeButton {
@@ -233,9 +228,8 @@ export const AppWrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
-  background-color: ${(props) =>
-    props.theme.background}; /* Paper-like background */
-  color: ${(props) => props.theme.text}; /* Black text for contrast */
+  background-color: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.text};
   min-height: 100vh;
   padding: 20px;
   font-family: "Patrick Hand", cursive;
@@ -262,14 +256,13 @@ export const FooterWrapper = styled.div`
     font-size: 15px;
     color: ${(props) => props.theme.text};
     text-align: center;
-    background-color: ${(props) =>
-      props.theme.background}; /* You can change the background color */
-    padding: 5px 0; /* Adjust padding as needed */
+    background-color: ${(props) => props.theme.background};
+    padding: 5px 0;
   }
 
   @media (max-width: 600px) {
     .footer {
-      font-size: 13px; /* Smaller font for mobile */
+      font-size: 13px;
     }
   }
 `;
