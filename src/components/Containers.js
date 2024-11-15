@@ -167,17 +167,34 @@ export const StockListWrapper = styled.div`
       align-items: center;
       width: 100%;
 
+      input {
+        width: calc(100% - 20px); /* Ensure consistent width for all inputs */
+        margin: 5px 0;
+        padding: 10px;
+        font-family: "Patrick Hand", cursive;
+        border: 1px dashed ${(props) => props.theme.borderColor};
+        background-color: ${(props) => props.theme.inputBackground};
+        color: ${(props) => props.theme.text};
+        text-align: center;
+
+        &:focus {
+          outline: none;
+          border-color: ${(props) => props.theme.borderColor};
+        }
+      }
+
       button {
         padding: 5px;
         background-color: ${(props) => props.theme.buttonBackground};
         color: ${(props) => props.theme.buttonText};
         border: 1px solid ${(props) => props.theme.borderColor};
         cursor: pointer;
-        margin-top: 5px;
+        margin-top: 10px;
         border-radius: 50px;
         font-family: "Patrick Hand", cursive;
         transition: background-color 0.3s ease;
         width: 50%;
+        text-align: center;
 
         &:hover {
           border: 1px dashed ${(props) => props.theme.borderColor};
