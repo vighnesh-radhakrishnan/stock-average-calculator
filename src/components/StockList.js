@@ -60,18 +60,22 @@ const StockList = ({ stocks, setStocks }) => {
       <div className="stock-grid">
         {stocks.map((stock, index) => (
           <div className="stock-item" key={index}>
-            <EditIcon
-              className="edit-icon"
-              onClick={() => handleEditClick(index)}
-              width="24px"
-              height="24px"
-            />
-            <CrossIcon
-              className="delete-icon"
-              onClick={() => handleDelete(index)}
-              width="24px"
-              height="24px"
-            />
+            {editIndex === index ? null : (
+              <>
+                <EditIcon
+                  className="edit-icon"
+                  onClick={() => handleEditClick(index)}
+                  width="24px"
+                  height="24px"
+                />
+                <CrossIcon
+                  className="delete-icon"
+                  onClick={() => handleDelete(index)}
+                  width="24px"
+                  height="24px"
+                />
+              </>
+            )}
             {editIndex === index ? (
               <div className="edit-actions">
                 <input
