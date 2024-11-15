@@ -106,7 +106,7 @@ export const StockListWrapper = styled.div`
     font-family: "Patrick Hand", cursive;
     text-align: center;
     width: 120px;
-    height: 120px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,10 +116,10 @@ export const StockListWrapper = styled.div`
       box-shadow: 0 0 10px ${(props) => props.theme.boxShadow};
     }
 
-    .delete-icon {
+    .delete-icon,
+    .edit-icon {
       position: absolute;
       top: 5px;
-      right: 5px;
       cursor: pointer;
       fill: ${(props) => props.theme.text};
       width: 20px;
@@ -127,27 +127,68 @@ export const StockListWrapper = styled.div`
       transition: transform 0.2s;
     }
 
+    .edit-icon {
+      left: 5px;
+    }
+
+    .delete-icon {
+      right: 5px;
+    }
+
     .delete-icon:hover {
       transform: scale(1.1);
       fill: red;
+    }
+
+    .edit-icon:hover {
+      transform: scale(1.1);
+      fill: #69dbb7;
+    }
+
+    input {
+      width: 80%;
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-top: 5px;
+      font-size: 0.8rem;
+      background-color: #69dbb7;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.2s;
+
+      &:hover {
+        background-color: #5fc9f3;
+      }
     }
   }
 
   @media (max-width: 480px) {
     .stock-item {
       width: 80px;
-      height: 80px;
+      height: 100px;
       padding-top: 20px;
 
-      .delete-icon {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        cursor: pointer;
-        fill: ${(props) => props.theme.text};
+      .delete-icon,
+      .edit-icon {
         width: 15px;
         height: 15px;
-        transition: transform 0.2s;
+      }
+
+      input {
+        width: 70px;
+        font-size: 0.8rem;
+      }
+
+      button {
+        font-size: 0.7rem;
       }
     }
 

@@ -18,7 +18,7 @@ const AveragePrice = ({ stocks }) => {
   const calculateTotalAmount = () => {
     return stocks
       .reduce((sum, stock) => sum + stock.price * stock.quantity, 0)
-      .toFixed(2); // Total amount invested
+      .toFixed(2);
   };
 
   const calculateTotalUnits = () => {
