@@ -73,7 +73,7 @@ const StockList = ({ stocks, setStocks }) => {
               height="24px"
             />
             {editIndex === index ? (
-              <div>
+              <div className="edit-actions">
                 <input
                   type="text"
                   name="name"

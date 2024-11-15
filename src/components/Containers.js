@@ -146,26 +146,44 @@ export const StockListWrapper = styled.div`
     }
 
     input {
-      width: 80%;
+      width: 100%;
       margin: 5px 0;
-      padding: 5px;
-      font-size: 0.9rem;
+      padding: 10px;
+      font-family: "Patrick Hand", cursive;
+      border: 1px dashed ${(props) => props.theme.borderColor};
+      background-color: ${(props) => props.theme.inputBackground};
+      color: ${(props) => props.theme.text};
       text-align: center;
+
+      &:focus {
+        outline: none;
+        border-color: ${(props) => props.theme.borderColor};
+      }
     }
 
-    button {
-      padding: 5px 10px;
-      margin-top: 5px;
-      font-size: 0.8rem;
-      background-color: #69dbb7;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background 0.2s;
+    .edit-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
 
-      &:hover {
-        background-color: #5fc9f3;
+      button {
+        padding: 5px;
+        background-color: ${(props) => props.theme.buttonBackground};
+        color: ${(props) => props.theme.buttonText};
+        border: 1px solid ${(props) => props.theme.borderColor};
+        cursor: pointer;
+        margin-top: 5px;
+        border-radius: 50px;
+        font-family: "Patrick Hand", cursive;
+        transition: background-color 0.3s ease;
+        width: 50%;
+
+        &:hover {
+          border: 1px dashed ${(props) => props.theme.borderColor};
+          background-color: ${(props) => props.theme.background};
+          color: ${(props) => props.theme.hoverButtonText};
+        }
       }
     }
   }
