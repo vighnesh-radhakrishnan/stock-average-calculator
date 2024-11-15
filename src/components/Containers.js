@@ -207,9 +207,9 @@ export const StockListWrapper = styled.div`
 
   @media (max-width: 480px) {
     .stock-item {
-      width: 80px;
-      height: 100px;
-      padding-top: 20px;
+      width: 90%;
+      height: auto;
+      padding: 10px;
 
       .delete-icon,
       .edit-icon {
@@ -218,17 +218,26 @@ export const StockListWrapper = styled.div`
       }
 
       input {
-        width: 70px;
+        width: 100%;
         font-size: 0.8rem;
+        padding: 5px;
       }
 
       button {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
       }
     }
 
+    .edit-actions {
+      width: 100%;
+    }
+
     h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      margin-bottom: 10px;
     }
   }
 `;
