@@ -1,6 +1,8 @@
 import React from "react";
 import { StockListWrapper } from "./Containers"; // Import the wrapper
 import { ReactComponent as CrossIcon } from "../icons/CrossIcon.svg";
+import { ReactComponent as EditIcon } from "../icons/EditIcon.svg";
+
 const StockList = ({ stocks, setStocks }) => {
   const handleDelete = (indexToDelete) => {
     const updatedStocks = stocks.filter((_, index) => index !== indexToDelete);
