@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Stock Average Calculator** is a simple React-based web application that allows users to calculate the average price of stocks. Users can input stock name prices and their corresponding quantities, and the app will compute the average price of the stocks added. The users can also delete their purchases as well.
+The Stock Average Calculator is a simple React-based web application that allows users to calculate the average price of stocks. Users can input stock names, prices, and their corresponding quantities, and the app will compute the average price of the stocks added. Additionally, users can edit individual stock details (name, price, and quantity) or delete their purchases as needed.
 Use **[Stock Average Calculator](https://vikkujonsnow.github.io/stock-average-calculator/)**.
 
 ## Features
@@ -10,6 +10,7 @@ Use **[Stock Average Calculator](https://vikkujonsnow.github.io/stock-average-ca
 - Add stock prices and quantities.
 - View a list of all added stocks.
 - Automatically calculate and display the average stock price.
+- Edit and Delete stock details
 
 ## Screenshots
 
